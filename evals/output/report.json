@@ -1,0 +1,24 @@
+{
+  "summary": "Detected 2 potential issue(s).",
+  "risk_level": "high",
+  "findings": [
+    {
+      "type": "breaking_change",
+      "severity": "high",
+      "file": "unknown",
+      "evidence": "Detected signature-style export change in diff.",
+      "recommendation": "Confirm backward compatibility and update callers or provide migration notes."
+    },
+    {
+      "type": "test_gap",
+      "severity": "medium",
+      "file": "unknown",
+      "evidence": "No explicit test changes found in diff.",
+      "recommendation": "Add or update tests that cover changed behavior."
+    }
+  ],
+  "next_actions": [
+    "Address high/medium severity findings first.",
+    "Re-run tests and update documentation if behavior changed."
+  ]
+}

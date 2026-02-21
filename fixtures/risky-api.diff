@@ -1,0 +1,19 @@
+diff --git a/src/api/user.ts b/src/api/user.ts
+index 1111111..2222222 100644
+--- a/src/api/user.ts
++++ b/src/api/user.ts
+@@ -1,7 +1,7 @@
+-export function getUser(id: string) {
++export const getUser = (id: number) => {
+return db.findById(id);
+-}
++};
+
+diff --git a/src/service/userService.ts b/src/service/userService.ts
+index 3333333..4444444 100644
+--- a/src/service/userService.ts
++++ b/src/service/userService.ts
+@@ -10,6 +10,6 @@
+export async function fetchUser(id: string) {
+return getUser(id);
+}

@@ -1,0 +1,12 @@
+diff --git a/src/api/order.ts b/src/api/order.ts
+index 5555555..6666666 100644
+--- a/src/api/order.ts
++++ b/src/api/order.ts
+@@ -1,5 +1,8 @@
+export function calculateTotal(price: number, qty: number) {
+- return price * qty;
++ if (qty > 100) {
++ return price * qty * 0.9;
++ }
++ return price * qty;
+}

@@ -1,0 +1,17 @@
+{
+  "summary": "Detected 1 potential issue(s).",
+  "risk_level": "medium",
+  "findings": [
+    {
+      "type": "test_gap",
+      "severity": "medium",
+      "file": "src/api/order.ts",
+      "evidence": "No explicit test file changes found in diff.",
+      "recommendation": "Add or update tests that cover changed behavior."
+    }
+  ],
+  "next_actions": [
+    "Address high/medium severity findings first.",
+    "Re-run tests and update documentation if behavior changed."
+  ]
+}

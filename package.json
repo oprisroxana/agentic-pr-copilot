@@ -10,7 +10,9 @@
     "dev": "tsx src/index.ts",
     "test": "vitest run",
     "test:watch": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "eval:check": "tsx evals/check.ts",
+    "eval:all": "tsx evals/run-all.ts"
   },
   "keywords": [],
   "author": "",
